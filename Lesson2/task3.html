@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1>Register</h3>
+            <form action="home.html">
+                <label for="Username"><b>Username:</b></label>
+                <input type="name" name="Username" id="Username" minlength="3" maxlength="6"><br>
+                <br>
+                <label for="Email"><b>Enter email:</b></label>
+                <input type="email" name="email" id="email" required><br>
+                <br>
+                <label for="password"><b>Enter password:</b></label>
+                <input type="password" name="password" id="password" min="6" max="9"><br>
+                <br>
+
+                </select>
+
+                <select name="uni" id="uni">
+                    <option value="University">University</option>
+                    <option value="BDU">BDU</option>
+                    <option value="ADNSU">ADNSU</option>
+                    <option value="UNEC">UNEC</option>
+                    <option value="BANM">BANM</option>
+                </select>
+
+                <select name="seher" id="seher">
+                    <option value="none">None</option>
+                    <option value="Baki">Baki</option>
+                    <option value="Naxcivan">Naxcivan</option>
+                    <option value="Tovuz">Tovuz</option>
+                    <option value="Masalli">Masalli</option><br>
+                </select>
+
+                <div>
+                    <label for="upload file"><b>Upload file:</b></label>
+                    <input type="file" name="upload" id="upload" required><br>
+                    <br>
+
+                </div>
+
+                <label for="g"><b>Gender:</b></label>
+                <input type="radio" name="gender" value="male"> Male <input type="radio" name="gender" value="woman">
+                Woman
+
+                <br>
+                <br>
+                <button type="submit">Add user</button><br>
+
+
+            </form>
+        </div>
+        <div>
+            <img src="/rocket-7774875_640.webp" alt="air" width=300" height="250" class="center">
+        </div>
+    </div>
+</body>
+
+</html>

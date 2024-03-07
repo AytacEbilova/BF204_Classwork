@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  height: max-content;
+  width: max-content;
+  margin: 250px auto;
+  align-items: flex-end;
+}
+
+h1 {
+    text-align: center;
+    color: brown;
+}
