@@ -1,0 +1,66 @@
+.main{
+    display: flex;
+    gap:2rem;
+}
+.container{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.left{
+  width: 100%;
+  gap: 2rem;
+  display: flex;
+ 
+}
+.right{
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    background-color:blue;
+    color: white;
+    border: 1px solid black;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    border-radius: 15px;
+    font-size: 30px;
+}
+.four-sect{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+.four{
+    display: flex;
+    gap:2rem;
+}  
+  @media only screen and (max-width: 992px){
+
+.container{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.four{
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+} 
+@media only screen and (max-width: 572px){
+    .left{
+        flex-direction: column;
+    flex-wrap: wrap;
+    }
+    .four-sect{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+

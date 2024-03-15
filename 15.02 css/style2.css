@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    
+}
+.nav ul {
+    display: flex;
+    list-style:  none;
+    gap: 40px;
+    margin-right: 60px;
+}
+.logo{
+    margin-left: 60px;
+}
