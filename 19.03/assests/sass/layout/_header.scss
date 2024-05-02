@@ -1,0 +1,28 @@
+
+    header{
+        position: fixed;
+        width: 100%;
+
+            background-color: white;
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            
+            ul {
+                display: flex;
+
+                li {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    
+
+
+
+    
+  
