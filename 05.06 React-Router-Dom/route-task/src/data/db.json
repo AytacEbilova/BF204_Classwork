@@ -1,0 +1,115 @@
+{
+  "countries": [
+    {
+      "id": "1",
+      "name": "Azerbaijan",
+      "population": 11000000,
+      "flagImg": "https://www.advantour.com/img/azarbaijan/symbolics/azerbaijan-flag_sm.jpg",
+      "capital": "Baku",
+      "religion": "Muslim",
+      "description": "Azerbaijan, the nation and former Soviet republic, is bounded by the Caspian Sea and Caucasus Mountains, which span Asia and Europe. Its capital, Baku, is famed for its medieval walled Inner City. Within the Inner City lies the Palace of the Shirvanshahs, a royal retreat dating to the 15th century, and the centuries-old stone Maiden Tower, which dominates the city skyline."
+    },
+    {
+      "id": "2",
+      "name": "England",
+      "population": 56000000,
+      "flagImg": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Flag_of_England.svg/2560px-Flag_of_England.svg.png",
+      "capital": "London",
+      "religion": "Christianity",
+      "description": "England is a country that is part of the United Kingdom. The country is located on the island of Great Britain, of which it covers roughly 62%, and over 100 smaller adjacent islands.the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.It is among the oldest of th"
+    },
+    {
+      "id": "3",
+      "name": "Germany",
+      "population": 83000000,
+      "flagImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png",
+      "capital": "Berlin",
+      "religion": "Christianity",
+      "description": "Germany is a Western European country with a landscape of forests, rivers, mountain ranges and North Sea beaches. It has over 2 millennia of history. Berlin, its capital, is home to art and nightlife scenes, the Brandenburg Gate and many sites relating to WWII."
+    },
+    {
+      "id": "4",
+      "name": "Italy",
+      "population": 59000000,
+      "flagImg": "https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1200px-Flag_of_Italy.svg.png",
+      "capital": "Rome",
+      "religion": "Christianity",
+      "description": "Italy, a European country with a long Mediterranean coastline, has left a powerful mark on Western culture and cuisine. Its capital, Rome, is home to the Vatican as well as landmark art and ancient ruins. Other major cities include Florence, with Renaissance masterpieces such as Michelangelo’s David and Brunelleschi's Duomo; Venice, the city of canals; and Milan, Italy’s fashion capital."
+    },
+    {
+      "id": "5",
+      "name": "Turkey",
+      "population": 85000000,
+      "flagImg": "https://m.media-amazon.com/images/I/612kE-iBLUL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+      "capital": "Ankara",
+      "religion": "Muslim",
+      "description": "Turkey, officially the Republic of Türkiye, is a country mainly in Anatolia in West Asia, with a smaller part called East Thrace in Southeast Europe."
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "fullname": "Aytac Ebilova",
+      "email": "ebilova@gmail.com",
+      "title": "REACT",
+      "message": "Lorem ipsum dolorsjdndnaskdakkn",
+      "isRead": "false"
+    },
+    {
+      "id": "Nina Mcbride",
+      "fullname": "gygagevyv@mailinator.com",
+      "email": "Harum minim adipisic",
+      "title": "Temporibus harum aut",
+      "message": false,
+      "isRead": false
+    },
+    {
+      "id": "Nicholas Jarvis",
+      "fullname": "cuxidov@mailinator.com",
+      "email": "Deleniti eveniet co",
+      "title": "Dolor eos nihil exer",
+      "message": false,
+      "isRead": true
+    },
+    {
+      "id": "Nehru Bryan",
+      "fullname": "kenofuqixu@mailinator.com",
+      "email": "Eius officiis quis v",
+      "title": "Ipsam dolores dolori",
+      "message": false,
+      "isRead": true
+    },
+    {
+      "id": "ce95",
+      "fullname": "Leandra Nelson",
+      "email": "jatihape@mailinator.com",
+      "title": "Beatae atque culpa ",
+      "message": "Similique nobis arch",
+      "isRead": true
+    },
+    {
+      "id": "2024-05-08T06:29:38.170Z",
+      "fullname": "Palmer Hooper",
+      "email": "vesovizak@mailinator.com",
+      "title": "Consequatur magna a",
+      "message": "Laborum Quibusdam e",
+      "isRead": true
+    },
+    {
+      "id": "b5f0",
+      "fullname": "Jelani Blackburn",
+      "email": "deduhutugo@mailinator.com",
+      "title": "Quos maxime illo odi",
+      "message": "Sed nisi illo commod",
+      "isRead": true
+    },
+    {
+      "id": "1e1f",
+      "fullname": "Nehru Carey",
+      "email": "pawi@mailinator.com",
+      "title": "Architecto cupiditat",
+      "message": "Nulla aut sint odit",
+      "isRead": true
+    }
+  ]
+}
