@@ -1,3 +1,5 @@
+import {nanoid} from 'nanoid';
+
 class Student{
     constructor(fullName,username,email, password, grades ){
         this.fullName=fullName;
@@ -8,4 +10,5 @@ class Student{
         this.id=nanoid();
     }
 }
+export default Student
   

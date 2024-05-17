@@ -1,10 +1,8 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
 import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
@@ -12,7 +10,10 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { post } from "../../services/request";
+import Swal from "sweetalert2";
 
+const defaultTheme = createTheme();
 function Copyright(props) {
   return (
     <Typography
@@ -30,16 +31,58 @@ function Copyright(props) {
     </Typography>
   );
 }
-const defaultTheme = createTheme();
-const StudentRegister = ({ setRegister }) => {
-  const handleSubmit = (event) => {
+
+const validatePassword = (password) => {
+  const re = /^(?=.*\d)(?=.*[A-Z]).{5,}$/;
+  return re.test(password);
+};
+const validateEmail = (email) => {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+};
+
+const TeacherRegister = ({ setRegister, setForm }) => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [emailAddr, setEmailAddr] = useState("");
+  const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
+    const errors = {};
+    if (!validatePassword(password)) {
+      errors.password =
+        "Password must be at least 5 characters with 1 uppercase letter and 1 number.";
+    }
+    if (!validateEmail(emailAddr)) {
+      errors.email = "Invalid email format.";
+    }
+    if (Object.keys(errors).length) {
+      setErrors(errors);
+      return;
+    }
+
+    const newTeacher = { firstName, lastName, emailAddr, password };
+
+    try {
+      await post("/teachers", newTeacher);
+      Swal.fire({
+        title: "Registration Successful!",
+        text: "You have successfully registered as a teacher.",
+        icon: "success",
+      });
+      setForm("login");
+    } catch (err) {
+      Swal.fire({
+        title: "Registration Failed!",
+        text: "Please try again later.",
+        icon: "error",
+      });
+      console.error(err);
+    }
   };
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <Container component="main" maxWidth="xs">
@@ -74,6 +117,8 @@ const StudentRegister = ({ setRegister }) => {
                   id="firstName"
                   label="First Name"
                   autoFocus
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -84,6 +129,8 @@ const StudentRegister = ({ setRegister }) => {
                   label="Last Name"
                   name="lastName"
                   autoComplete="family-name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -94,6 +141,10 @@ const StudentRegister = ({ setRegister }) => {
                   label="Email Address"
                   name="email"
                   autoComplete="email"
+                  value={emailAddr}
+                  onChange={(e) => setEmailAddr(e.target.value)}
+                  error={!!errors.email}
+                  helperText={errors.email || ""}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -105,6 +156,10 @@ const StudentRegister = ({ setRegister }) => {
                   type="password"
                   id="password"
                   autoComplete="new-password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  error={!!errors.password}
+                  helperText={errors.password || ""}
                 />
               </Grid>
             </Grid>
@@ -118,17 +173,16 @@ const StudentRegister = ({ setRegister }) => {
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link
+                  href="#"
+                  variant="body2"
+                  onClick={() => setForm("student")}
+                >
                   Already have an account? Sign in
                 </Link>
               </Grid>
-              <Grid item >
-                <Button
-                  variant="body2"
-                  onClick={() => {
-                    setRegister("teacher");
-                  }}
-                >
+              <Grid item>
+                <Button variant="body2" onClick={() => setRegister("student")}>
                   Register as Student
                 </Button>
               </Grid>
@@ -141,4 +195,4 @@ const StudentRegister = ({ setRegister }) => {
   );
 };
 
-export default StudentRegister;
+export default TeacherRegister;

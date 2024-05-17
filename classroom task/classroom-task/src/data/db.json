@@ -1,46 +1,175 @@
 {
-    "teachers": [
-      {
-        "id": "1",
-        "fullName": "Kanan Amirov",
-        "email": "kanan.amirov@code.edu.az",
-        "username": "KananAmir",
-        "password": "Amirov123",
-        "major": "programming",
-        "profileImage": "test.jpeg"
-      }
-    ],
-    "students": [
-      {
-        "id": "1",
-        "fullName": "Ali Jalilov",
-        "email": "ali.jalilov@code.edu.az",
-        "username": "AliAliyev",
-        "password": "Aliyev123",
-        "profileImage": "test.jpeg",
-        "grades": [
-          {
-            "taskId": "1",
-            "grade": 70
-          }
-        ]
-      }
-    ],
-    "tasks": [
-      {
-        "id": "1",
-        "title": "local storage",
-        "description": "lorem ipsum dolor",
-        "topic": "REACT",
-        "deadline": "Today at 5:00 PM",
-        "createdAt": "2024-05-09 00:04:00",
-        "teacherId": "1",
-        "assignments": [
-          {
-            "studentId": "1",
-            "taskUrl": "https://github.com/KananAmir/AZMP101-JS&quot"
-          }
-        ]
-      }
-    ]
-  }
+  "teachers": [
+    {
+      "id": "1",
+      "fullName": "Kanan Amirov",
+      "email": "kanan.amirov@code.edu.az",
+      "username": "KananAmir",
+      "password": "Amirov123",
+      "major": "programming",
+      "profileImage": "test.jpeg"
+    },
+    {
+      "id": "fcb6",
+      "firstName": "serxan",
+      "lastName": "talibzade",
+      "emailAddr": "dfs@gm.com",
+      "password": "serxan123"
+    },
+    {
+      "id": "fc50",
+      "firstName": "serxan",
+      "lastName": "talibzade",
+      "emailAddr": "dfs@gm.com",
+      "password": "serxan123"
+    },
+    {
+      "id": "c9a4",
+      "firstName": "Elnur",
+      "lastName": "Khalilov",
+      "emailAddr": "elnur@code.edu.az",
+      "password": "elnur123"
+    },
+    {
+      "id": "a5c3",
+      "firstName": "Rasul",
+      "lastName": "Aliyev",
+      "emailAddr": "rasul@code.edu.az",
+      "password": "Salam123"
+    },
+    {
+      "id": "5f26",
+      "firstName": "Elnur",
+      "lastName": "Khalilov",
+      "emailAddr": "elnurxo@code.edu.az",
+      "password": "Elnur123"
+    }
+  ],
+  "students": [
+    {
+      "id": "1",
+      "fullName": "Ali Jalilov",
+      "email": "ali.jalilov@code.edu.az",
+      "username": "AliAliyev",
+      "password": "Aliyev123",
+      "profileImage": "test.jpeg",
+      "grades": []
+    },
+    {
+      "id": "8ef0",
+      "firstName": "aytac",
+      "lastName": "ebilova",
+      "emailAddr": "ebilove796@gmail.com",
+      "password": "12345"
+    },
+    {
+      "id": "d21a",
+      "firstName": "leman",
+      "lastName": "mesumova",
+      "emailAddr": "sjkj@gmail.com",
+      "password": "salam123"
+    },
+    {
+      "id": "f1a9",
+      "firstName": "ehmed",
+      "lastName": "ehmedov",
+      "emailAddr": "adasa@gm.com",
+      "password": "ehmed123"
+    },
+    {
+      "id": "f1b1",
+      "firstName": "ehmed",
+      "lastName": "ehmedov",
+      "emailAddr": "adasa@gm.com",
+      "password": "ehmed123"
+    },
+    {
+      "id": "6135",
+      "firstName": "malis",
+      "lastName": "malisov",
+      "emailAddr": "adasa@gm.com",
+      "password": "123456"
+    },
+    {
+      "id": "c526",
+      "firstName": "Aytac",
+      "lastName": "Abilova",
+      "emailAddr": "ebilove796@gmail.com",
+      "password": "Aytac123"
+    },
+    {
+      "id": "3ab6",
+      "firstName": "meh",
+      "lastName": "bayramov",
+      "emailAddr": "adasa@gm.com",
+      "password": "Salam123"
+    },
+    {
+      "id": "0112",
+      "firstName": "aysel",
+      "lastName": "qenberova",
+      "emailAddr": "qenberova@gmail.com",
+      "password": "Aysel123"
+    },
+    {
+      "id": "2051",
+      "firstName": "Gunel",
+      "lastName": "Fetullayeva",
+      "emailAddr": "gunel2@gmail.com",
+      "password": "Gunel123"
+    },
+    {
+      "id": "294c",
+      "firstName": "zakir",
+      "lastName": "eliyev",
+      "emailAddr": "zakir@gmail.com",
+      "password": "Zakir123"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "e809",
+      "title": "serxan's task",
+      "description": "task desc",
+      "topic": "new topic",
+      "deadline": "2024-05-31 00:00:00",
+      "createdAt": "Sun May 05 2024 21:32:52 GMT+0400 (Azerbaijan Standard Time)",
+      "teacherId": "fcb6",
+      "assignments": [
+        {
+          "studentId": "294c",
+          "taskUrl": "https://github.com/settings/profile"
+        },
+        {
+          "studentId": "0112",
+          "taskUrl": "https://github.com/settings/profile"
+        }
+      ]
+    },
+    {
+      "id": "f61d",
+      "title": "React(useState hook, virtualDOM)",
+      "description": "Todo component-ində AddTodo, SearchTodo, TodoList (chilren props), TodoItem component-lərini istifadə edəcəksiniz. todos state-inizi də bu component-də yaradıb, lazım olan yerlərə props olaraq göndərəcəksiniz. TodoList component-ində sadəcə children props-unu qəbul edib,, fragment-ə ötürəcəksiniz və children üçün necə prop-type yazılmalı olduğunu araşdırıb yazacaqsınız. Todo component-ində state-inizi map edib (TodoList-in içərisində), hər dövrdə bir TodoItem return edəcəksiniz və TodoItem component-inə lazım olan dəyərləri props olaraq göndərəcəksiniz. TodoItem component-ində isə lazımlı data-ları props-dan götürüb istifadə edəcəksiniz və DeleteTodo və MarkToDo component-lərini də burada istifadə edəcəksiniz. AddToDo component-ində bir form olacaq (validation-lu), əgər input boş olarsa, input-un altında validation message-iniz görünəcək. Əgər hər şey okay olarsa, bir ToDoItem yaranacaq və state-inizi update edəcək.",
+      "topic": "React",
+      "deadline": "2024-05-07 13:00:00",
+      "createdAt": "Mon May 06 2024 00:16:03 GMT+0400 (Azerbaijan Standard Time)",
+      "teacherId": "5f26",
+      "assignments": [
+        {
+          "studentId": "c526",
+          "taskUrl": "https://github.com/settings/profile"
+        }
+      ]
+    },
+    {
+      "id": "21a2",
+      "title": "taskkk",
+      "description": "sxbasjdbasjbd",
+      "topic": "jkasbdkasbd",
+      "deadline": "2024-05-10 00:05:08",
+      "createdAt": "Mon May 06 2024 14:12:42 GMT+0400 (Azerbaijan Standard Time)",
+      "teacherId": "fcb6",
+      "assignments": []
+    }
+  ]
+}

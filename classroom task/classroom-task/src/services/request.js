@@ -1,9 +1,10 @@
-import BASE_URL from "./constants.js";
+import { BASE_URL } from "./constant.js";
 import axios from "axios";
 
 export async function getAll(endpoint) {
     try {
-        return await axios.get(BASE_URL + endpoint);
+        const response= await axios.get(BASE_URL + endpoint);
+        return response.data;
     } catch (error) {
         return error;
     }
@@ -11,7 +12,9 @@ export async function getAll(endpoint) {
 
 export async function getOne(endpoint, id) {
     try {
-        return await axios.get(BASE_URL + endpoint + `/${id}`);
+        console.log(BASE_URL + endpoint + `/${id}`);
+       const response= await axios.get(BASE_URL + endpoint + `/${id}`);
+       return response.data;
     } catch (error) {
         return error;
     }
@@ -27,7 +30,8 @@ export async function deleteOne(endpoint, id) {
 
 export async function post(endpoint, payload) {
     try {
-        return await axios.post(BASE_URL + endpoint, payload);
+        const response = await axios.post(BASE_URL + endpoint, payload);
+        return response.data;
     } catch (error) {
         return error;
     }
@@ -43,7 +47,8 @@ export async function putOne(endpoint, id, payload) {
 
 export async function patchOne(endpoint, id, payload) {
     try {
-        return await axios.patch(BASE_URL + endpoint + `/${id}`, payload);
+        const response= await axios.patch(BASE_URL + endpoint + `/${id}`, payload);
+        return response.data;
     } catch (error) {
         return error;
     }
